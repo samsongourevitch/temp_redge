@@ -1,0 +1,13 @@
+outputs
+data
+build
+dist
+
+*.pyc
+.venv
+
+.DS_Store
+
+*egg-info
+
+uv.lock
