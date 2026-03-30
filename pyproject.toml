@@ -1,7 +1,7 @@
 [project]
 name = "ReDGE"
 version = "0.1.0"
-description = "Code for Categorical Reparameterization using Denoising Diffusion models at https://arxiv.org/abs/2601.00781"
+description = "XXX"
 readme = "README.md"
 requires-python = ">=3.10"
 dependencies = [

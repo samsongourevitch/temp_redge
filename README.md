@@ -1,19 +1,5 @@
 # ReDGE
 
-Code for *Categorical Reparameterization using Denoising Diffusion models* ([arXiv:2601.00781](https://arxiv.org/abs/2601.00781)).
-
-We also implemented a PyPi package `redge` with the samplers from the paper, which can be used for custom tasks and models.
-
-You can install it with `pip install redge` and import the samplers directly in your code.
-
-This package provides a simple API for sampling from ReDGE-style samplers. For example, to sample from the redge sampler instead of the standard Gumbel-Softmax, simply replace your sampling code with:
-
-```python
-from redge import redge
-
-x = redge(logits, n_steps=5, t_1=0.5, hard=True) # Instead of torch.nn.functional.gumbel_softmax(logits, tau=0.5, hard=True)
-```
-
 ## Implemented samplers
 
 - `redge`
@@ -142,19 +128,3 @@ Guidelines:
 
 - Sudoku model scripts were adapted from: https://github.com/HKUNLP/diffusion-vs-ar
 - MaskGIT integration was adapted from: https://github.com/valeoai/Halton-MaskGIT
-
-## Citation
-
-If you use this repository, please cite:
-
-```bibtex
-@article{gourevitch2026redge,
-  title={Categorical Reparameterization with Denoising Diffusion models},
-  author={Samson Gourevitch and Alain Durmus and Eric Moulines and Jimmy Olsson and Yazid Janati},
-  year={2026},
-  eprint={2601.00781},
-  archivePrefix={arXiv},
-  primaryClass={cs.LG},
-  url={https://arxiv.org/abs/2601.00781}
-}
-```
