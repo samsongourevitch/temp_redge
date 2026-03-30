@@ -169,7 +169,7 @@ def _save_samples(model, cat_dim, latent_dim, n_samples, device, out_path):
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument('--config', type=str, default='configs/problem/bernoulli_vae.yaml')
+    parser.add_argument('--config', type=str, default='configs/demo/bernoulli_vae.yaml')
     parser.add_argument('--samplers', type=str, default='all')
     parser.add_argument('--t1-sweep', type=str, default=None)
     parser.add_argument('--n-steps-sweep', type=str, default=None)
